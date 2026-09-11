@@ -1,0 +1,55 @@
+:root {
+  color-scheme: light;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #242420;
+  background: #faf9f6;
+  font-synthesis: none;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-size: 19px; line-height: 1.75; overflow-wrap: break-word; }
+main, .site-header, .site-footer { width: min(100% - 3rem, 640px); margin-inline: auto; }
+main { padding-block: 5rem 2rem; }
+h1, h2, h3, h4, h5, h6 { line-height: 1.25; font-weight: normal; text-wrap: balance; }
+h1 { font-size: clamp(2rem, 6vw, 2.65rem); margin: 0 0 1rem; letter-spacing: -0.025em; }
+h2 { font-size: 1.45rem; }
+h3 { font-size: 1.2rem; }
+p { margin: 0 0 1.25rem; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
+a:visited { color: inherit; }
+a:hover { color: #605a4c; }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+.masthead { margin-bottom: 4.5rem; }
+.date, .empty-note, .site-footer { color: #68665f; }
+.essay-list { list-style: none; padding: 0; margin: 0; }
+.essay-list li { margin-bottom: 3rem; }
+.essay-list h2 { margin: 0 0 0.4rem; }
+.essay-list p { margin-bottom: 0.6rem; }
+.date { font-size: 0.85rem; }
+.site-header { padding-top: 3rem; font-size: 1rem; }
+.site-header + main { padding-top: 3.5rem; }
+.article-header { margin-bottom: 3rem; }
+.site-footer { padding-block: 3rem 3rem; font-size: 0.8rem; }
+.prose h2, .prose h3, .prose h4 { margin-top: 2.5rem; }
+.prose ul, .prose ol { padding-left: 1.5rem; }
+.prose li { margin-bottom: 0.5rem; }
+blockquote { margin: 2rem 0; padding-left: 1.5rem; border-left: 1px solid #b9b6ac; }
+img, video { max-width: 100%; height: auto; }
+figure { margin: 2rem 0; }
+figcaption { font-size: 0.85rem; color: #68665f; }
+pre { overflow-x: auto; padding: 1rem; border: 1px solid #dedbd2; font-size: 0.85rem; }
+code { font-size: 0.9em; }
+table { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; font-size: 0.9rem; }
+th, td { padding: 0.5rem 0.75rem; border-bottom: 1px solid #dedbd2; text-align: left; }
+hr { border: 0; border-top: 1px solid #dedbd2; margin: 2.5rem 0; }
+@media (max-width: 480px) {
+  body { font-size: 18px; }
+  main { padding-top: 3.5rem; }
+  .masthead { margin-bottom: 3.5rem; }
+}
+@media print {
+  :root { background: white; color: black; }
+  body { font-size: 12pt; }
+  main { width: 100%; padding: 0; }
+  .site-header, .site-footer { display: none; }
+  a { text-decoration: none; }
+}
